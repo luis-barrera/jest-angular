@@ -1,0 +1,55 @@
+{
+  /* ... */
+  "scripts": {
+    /* ... */
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch",
+    "test:ci": "jest --runInBand"
+  },
+  "private": true,
+  "jest": {
+    "moduleNameMapper": {
+      "^@classes(.*)$": "<rootDir>/src/app/core/classes$1",
+      "^@constants(.*)$": "<rootDir>/src/app/core/constants$1",
+      "^@guards(.*)$": "<rootDir>/src/app/core/guards$1",
+      "^@interceptors(.*)$": "<rootDir>/src/app/core/interceptors$1",
+      "^@mappers(.*)$": "<rootDir>/src/app/core/mappers$1",
+      "^@models(.*)$": "<rootDir>/src/app/core/models$1",
+      "^@resolvers(.*)$": "<rootDir>/src/app/core/resolvers$1",
+      "^@services(.*)$": "<rootDir>/src/app/core/services$1",
+      "^@utils(.*)$": "<rootDir>/src/app/core/utils$1",
+      "^@animations(.*)$": "<rootDir>/src/app/shared/animations$1",
+      "^@components(.*)$": "<rootDir>/src/app/shared/components$1",
+      "^@directives(.*)$": "<rootDir>/src/app/shared/directives$1",
+      "^@layouts(.*)$": "<rootDir>/src/app/shared/layouts$1",
+      "^@pipes(.*)$": "<rootDir>/src/app/shared/pipes$1",
+      "^@shared-module(.*)$": "<rootDir>/src/app/shared/shared.module.ts",
+      "^@shared(.*)$": "<rootDir>/src/app/shared$1",
+      "^@auth(.*)$": "<rootDir>/src/app/pages/auth$1",
+      "^@pages(.*)$": "<rootDir>/src/app/pages$1",
+      "^@assets(.*)$": "<rootDir>/src/assets$1",
+      "^@styles(.*)$": "<rootDir>/src/styles$1",
+      "^@env(.*)$": "<rootDir>/src/environments$1"
+    },
+    "preset": "jest-preset-angular",
+    "testResultsProcessor": "jest-sonar-reporter",
+    "collectCoverage": true,
+    "setupFilesAfterEnv": [
+      "<rootDir>/setupJest.ts"
+    ],
+    "modulePaths": [
+      "<rootDir>"
+    ],
+    "roots": [
+      "<rootDir>/src",
+      "src/"
+    ],
+    "testPathIgnorePatterns": [
+      "node_modules/",
+      "dist/",
+      "src/test.ts",
+      "src/main.ts"
+    ]
+  }
+}

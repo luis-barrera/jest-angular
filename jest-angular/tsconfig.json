@@ -1,0 +1,78 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  /* ... */
+  "compilerOptions": {
+    /* ... */
+    "paths": {
+      /* Declare easy access to paths */
+      // Core
+      "@classes": [
+        "src/app/core/classes/*"
+      ],
+      "@constants/*": [
+        "src/app/core/constants/*"
+      ],
+      "@guards/*": [
+        "src/app/core/guards/*"
+      ],
+      "@interceptors/*": [
+        "src/app/core/interceptors/*"
+      ],
+      "@mappers/*": [
+        "src/app/core/mappers/*"
+      ],
+      "@models/*": [
+        "src/app/core/models/*"
+      ],
+      "@resolvers/*": [
+        "src/app/core/resolvers/*"
+      ],
+      "@services/*": [
+        "src/app/core/services/*"
+      ],
+      "@utils/*": [
+        "src/app/core/utils/*"
+      ],
+      // Shared
+      "@animations/*": [
+        "src/app/shared/animations/*"
+      ],
+      "@components/*": [
+        "src/app/shared/components/*"
+      ],
+      "@directives/*": [
+        "src/app/shared/directives/*"
+      ],
+      "@layouts/*": [
+        "src/app/shared/layouts/*"
+      ],
+      "@pipes/*": [
+        "src/app/shared/pipes/*"
+      ],
+      "@shared-module": [
+        "src/app/shared/shared.module.ts"
+      ],
+      "@shared/*": [
+        "src/app/shared/*"
+      ],
+      // Pages
+      "@auth/*": [
+        "src/app/pages/auth/*"
+      ],
+      "@pages/*": [
+        "src/app/pages/*"
+      ],
+      // Others
+      "@assets/*": [
+        "src/assets/*"
+      ],
+      "@styles/*": [
+        "src/styles/*"
+      ],
+      "@env/*": [
+        "src/environments/*"
+      ]
+    }
+  }
+  /* ... */
+}
